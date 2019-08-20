@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ol {
+  list-style: none;
+}
+#canvas {
+  background: #cbecb9;
+}
+#actions {
+  position: fixed;
+  top: 14px;
+  left: 16px;
+}
+
+.icon {
+  width: 2.5em;
+  height: 2.5em;
+  fill: #638a48;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon.active {
+  fill: red;
+  transform: scale(1.2);
+}
+
+#colors {
+  position: fixed;
+  top: 90px;
+  left: 18px;
+}
+
+#colors li {
+  width: 16px;
+  height: 16px;
+  margin: 16px 0;
+  border-radius: 50%;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#colors li#black {
+  background: #2d2d2d;
+  border: 1px solid #101010;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#colors li#red {
+  background: red;
+  border: 1px solid #ca0001;
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.6);
+}
+
+#colors li.active {
+  transform: scaleX(2);
+}
+
+#line {
+  position: fixed;
+  top: 230px;
+  left: 18px;
+}
+
+#line li {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#line li {
+  width: 20px;
+  background: #2e2e2e;
+  margin: 16px 0;
+}
+
+#line #thick {
+  height: 6px;
+}
+
+#line #thin {
+  height: 3px;
+}
+
+#line li.active {
+  transform: scaleX(2);
+}
